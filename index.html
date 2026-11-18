@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Online Commerce Coaching for Class 11 &amp; 12 | CBSE &amp; MP Board | Rhythm Commerce Academy, Indore</title>
+<meta name="description" content="Online commerce coaching by Sarika Jain for Class 11 & 12: Accountancy, Business Studies and Economics for CBSE and MP Board. Learn from anywhere in India or in Indore. Book a free demo class.">
+<!-- Tells Google what this site is (helps search ranking). City only, no home address. -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"EducationalOrganization","name":"Rhythm Commerce Academy",
+ "description":"Online and Indore-based commerce coaching for Class 11 & 12 (CBSE and MP Board): Accountancy, Business Studies and Economics.",
+ "founder":{"@type":"Person","name":"Sarika Jain"},
+ "address":{"@type":"PostalAddress","addressLocality":"Indore","addressRegion":"Madhya Pradesh","addressCountry":"IN"},
+ "areaServed":"IN","email":"rhythmacademy@gmail.com","logo":"logo.jpg",
+ "sameAs":["https://www.youtube.com/@Rhythm_Commerce_Academy"]}
+</script>
+<!-- Favicon = the academy logo (logo.jpg in the same folder) -->
+<link rel="icon" href="logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&family=Cinzel:wght@500;600&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ============ THEME: change colours here ============ */
+:root{
+  --ink:#0B1F3F;        /* navy: main brand colour (from logo) */
+  --ink-2:#132B52;
+  --logo-bg:#011129;    /* exact navy of the logo background */
+  --cream:#F8F6F1;      /* page background */
+  --paper:#FFFFFF;
+  --brass:#A8841F;      /* deep gold: for text on light backgrounds */
+  --gold:#D4AF37;       /* bright gold: for use on navy */
+  --text:#1A2333;
+  --muted:#5B6474;
+  --line:#E5E0D5;
+  --serif:'Fraunces', Georgia, serif;
+  --sans:'Instrument Sans', system-ui, sans-serif;
+  --wrap:1160px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--text);background:var(--cream);line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.15;color:var(--ink);letter-spacing:-.01em}
+h2{font-size:clamp(2rem,4vw,2.9rem)}
+.eyebrow{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--brass);font-weight:600;margin-bottom:18px;display:block}
+.lead{font-size:1.15rem;color:var(--muted);max-width:620px}
+section{padding:110px 0}
+.rule{height:1px;background:var(--line);border:0}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 28px;border-radius:2px;font-weight:500;font-size:.95rem;transition:.25s;border:1px solid var(--ink)}
+.btn-solid{background:var(--ink);color:#fff}
+.btn-solid:hover{background:var(--ink-2)}
+.btn-line{color:var(--ink)}
+.btn-line:hover{background:var(--ink);color:#fff}
+.link{color:var(--ink);font-weight:500;border-bottom:1px solid var(--brass);padding-bottom:2px}
+
+/* ============ HEADER ============ */
+header{position:sticky;top:0;z-index:50;background:rgba(247,243,236,.92);backdrop-filter:blur(8px);border-bottom:1px solid transparent;transition:.3s}
+header.scrolled{border-color:var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:78px}
+.brand{display:flex;align-items:center;gap:12px}
+/* LOGO: logo.jpg, zoomed in on the "RC" monogram so it reads at small size */
+.mark{width:48px;height:48px;border-radius:50%;background:var(--logo-bg) url(logo.jpg) 52% 34%/185% no-repeat;box-shadow:0 0 0 1px var(--gold)}
+.brand-name{font-family:'Cinzel',serif;font-weight:600;letter-spacing:.08em;font-size:1.15rem;color:var(--ink);line-height:1.1}
+.brand-name small{display:block;font-family:var(--sans);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.menu{display:flex;gap:34px;align-items:center;font-size:.93rem}
+.menu a:not(.btn){color:var(--muted);transition:.2s}
+.menu a:not(.btn):hover{color:var(--ink)}
+.menu .btn{padding:10px 20px}
+.burger{display:none;background:none;border:0;cursor:pointer;width:30px;height:20px;position:relative}
+.burger span{position:absolute;left:0;width:100%;height:1.5px;background:var(--ink);transition:.3s}
+.burger span:nth-child(1){top:0}.burger span:nth-child(2){top:9px}.burger span:nth-child(3){top:18px}
+
+/* ============ HERO ============ */
+.hero{padding:70px 0 100px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:center}
+.hero h1{font-size:clamp(2.7rem,6vw,4.6rem);margin-bottom:26px}
+.hero h1 em{font-style:italic;color:var(--brass)}
+.hero .lead{margin-bottom:38px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+/* PHOTO: for now this shows the logo. When ready, put photo.jpg in the folder and place <img src="photo.jpg" alt="Sarika Jain"> inside .portrait */
+.portrait{aspect-ratio:4/5;border-radius:220px 220px 4px 4px;overflow:hidden;background:var(--logo-bg) url(logo.jpg) center/88% no-repeat;position:relative;display:grid;place-items:center;box-shadow:0 0 0 1px var(--gold) inset}
+.portrait img{width:100%;height:100%;object-fit:cover}
+.portrait .ph{font-family:var(--serif);font-size:4.5rem;color:rgba(30,59,52,.35)}
+.portrait-cap{margin-top:16px;font-size:.85rem;color:var(--muted);display:flex;justify-content:space-between}
+
+/* Stats strip */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat{padding:34px 26px;border-right:1px solid var(--line)}
+.stat:last-child{border-right:0}
+.stat b{display:block;font-family:var(--serif);font-weight:500;font-size:2rem;color:var(--ink)}
+.stat span{font-size:.88rem;color:var(--muted)}
+
+/* ============ ABOUT ============ */
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px}
+.about p{margin-bottom:20px;color:var(--muted)}
+.about .quote{font-family:var(--serif);font-size:1.5rem;font-style:italic;color:var(--ink);line-height:1.45;border-left:2px solid var(--brass);padding-left:24px;margin:34px 0}
+.sign{font-family:var(--serif);font-size:1.25rem;color:var(--ink)}
+.sign small{display:block;font-family:var(--sans);font-size:.85rem;color:var(--muted)}
+
+/* ============ SUBJECTS ============ */
+.subjects{background:var(--paper)}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:60px;flex-wrap:wrap}
+.sub-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line)}
+.sub{padding:40px 28px 40px 0;border-right:1px solid var(--line);margin-right:28px}
+.sub:last-child{border-right:0;margin-right:0}
+.sub .num{font-family:var(--serif);color:var(--brass);font-size:.95rem;margin-bottom:28px;display:block}
+.sub h3{font-size:1.45rem;margin-bottom:14px}
+.sub p{font-size:.95rem;color:var(--muted)}
+
+/* ============ WAYS TO LEARN ============ */
+.ways-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.way{background:var(--paper);border:1px solid var(--line);padding:48px;display:flex;flex-direction:column}
+.way.dark{background:var(--ink);border-color:var(--ink);color:#D5DBE6}
+.way.dark h3,.way.dark .price{color:#fff}
+.way .tag{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--brass);font-weight:600}
+.way h3{font-size:1.9rem;margin:14px 0 6px}
+.way .price{font-family:var(--serif);font-size:1.1rem;color:var(--ink);margin-bottom:26px}
+.way ul{list-style:none;margin-bottom:36px;flex:1}
+.way li{padding:11px 0;border-bottom:1px solid var(--line);font-size:.95rem}
+.way.dark li{border-color:rgba(255,255,255,.12)}
+.way.dark .btn{background:var(--gold);border-color:var(--gold);color:var(--ink)}
+.way.dark .btn:hover{background:#E2C25A}
+.way .btn{align-self:flex-start}
+
+/* ============ RESULTS ============ */
+.results{background:var(--ink);color:#C4CCDA}
+.results h2{color:#fff}
+.results .lead{color:#97A3BA}
+.res-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.12);margin-top:60px}
+.res{background:var(--ink);padding:44px 36px}
+.res b{font-family:var(--serif);font-weight:400;font-size:3.8rem;color:#fff;line-height:1;display:block}
+.res b sup{font-size:1.4rem;color:var(--brass)}
+.res .who{margin-top:20px;font-size:1.05rem;color:#fff}
+.res .what{font-size:.88rem;color:#97A3BA}
+
+/* ============ TESTIMONIALS ============ */
+.t-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:60px}
+.t{background:var(--paper);border:1px solid var(--line);padding:40px 34px;display:flex;flex-direction:column}
+.t .q{font-family:var(--serif);font-size:3rem;color:var(--brass);line-height:.6;height:26px}
+.t p{font-size:1rem;color:var(--text);flex:1;margin-bottom:28px}
+.t .who{font-weight:600;color:var(--ink);font-size:.95rem}
+.t .who small{display:block;font-weight:400;color:var(--muted)}
+
+/* ============ VIDEOS ============ */
+.videos{background:var(--paper)}
+.video-box{aspect-ratio:16/9;width:100%;border:1px solid var(--line);background:#000}
+.video-box iframe{width:100%;height:100%;border:0}
+
+/* ============ FAQ ============ */
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px}
+details{border-bottom:1px solid var(--line);padding:26px 0}
+details:first-child{border-top:1px solid var(--line)}
+summary{cursor:pointer;list-style:none;font-family:var(--serif);font-size:1.25rem;color:var(--ink);display:flex;justify-content:space-between;gap:20px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';color:var(--brass);font-family:var(--sans);font-size:1.5rem;line-height:1;transition:.3s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin-top:14px;color:var(--muted);max-width:620px}
+
+/* ============ CONTACT ============ */
+.contact{background:var(--ink);color:#C4CCDA;text-align:center}
+.contact h2{color:#fff;font-size:clamp(2.2rem,5vw,3.6rem);max-width:760px;margin:0 auto 22px}
+.contact .lead{color:#97A3BA;margin:0 auto 42px}
+.contact .btn-solid{background:var(--gold);border-color:var(--gold);color:var(--ink)}
+.contact .btn-line{color:#fff;border-color:rgba(255,255,255,.4)}
+.contact .btn-line:hover{background:#fff;color:var(--ink)}
+.c-details{display:grid;grid-template-columns:repeat(3,1fr);margin-top:80px;border-top:1px solid rgba(255,255,255,.12);text-align:left}
+.c-details div{padding:30px 26px 0 0}
+.c-details span{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--brass);display:block;margin-bottom:8px}
+.c-details a,.c-details p{color:#fff;font-size:1rem}
+
+footer{background:var(--logo-bg);color:#8792A8;font-size:.85rem;padding:30px 0}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+
+/* Hindi text */
+.hi{font-family:'Tiro Devanagari Hindi',serif}
+.hero .hi-line{font-size:1.4rem;color:var(--brass);margin:-6px 0 22px}
+.cta-note{margin-top:16px;font-size:.92rem;color:var(--muted)}
+
+/* For parents */
+.parents{background:var(--paper)}
+.p-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:36px}
+.p-item{border-top:2px solid var(--gold);padding-top:24px}
+.p-item h3{font-size:1.35rem;margin-bottom:10px}
+.p-item p{color:var(--muted);font-size:.95rem}
+
+/* Latest video cards (click to play in place) */
+.v-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.v-card{display:block;cursor:pointer}
+.v-thumb{aspect-ratio:16/9;background:#000 center/cover no-repeat;position:relative;border:1px solid var(--line);overflow:hidden}
+.v-thumb::after{content:'';position:absolute;left:50%;top:50%;width:58px;height:58px;margin:-29px 0 0 -29px;border-radius:50%;background:rgba(11,31,63,.85) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M8 5v14l11-7z' fill='%23D4AF37'/%3E%3C/svg%3E") 55% 50%/24px no-repeat;transition:.25s}
+.v-card:hover .v-thumb::after{background-color:var(--ink);transform:scale(1.08)}
+.v-thumb.playing::after{display:none}
+.v-thumb iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.v-card h3{font-family:var(--sans);font-weight:600;font-size:1rem;line-height:1.45;margin-top:14px}
+.v-card small{color:var(--muted);font-size:.85rem}
+
+/* Gold accents on navy sections */
+.results .eyebrow,.contact .eyebrow,.way.dark .tag,.res b sup,.c-details span{color:var(--gold)}
+
+/* Floating WhatsApp button */
+.wa-float{position:fixed;right:22px;bottom:22px;width:54px;height:54px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 6px 20px rgba(0,0,0,.18);z-index:60;transition:.25s}
+.wa-float:hover{transform:translateY(-3px)}
+.wa-float svg{width:28px;fill:#fff}
+
+/* Gentle fade-in on scroll */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* ============ MOBILE ============ */
+@media (max-width:960px){
+  section{padding:80px 0}
+  .hero-grid,.about-grid,.faq-grid,.ways-grid{grid-template-columns:1fr;gap:48px}
+  .portrait{max-width:420px}
+  .stats{grid-template-columns:1fr 1fr}
+  .stat:nth-child(2){border-right:0}
+  .stat:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .sub-grid{grid-template-columns:1fr 1fr}
+  .sub{border-right:0;margin-right:0;padding-right:20px;border-bottom:1px solid var(--line)}
+  .res-grid,.t-grid,.c-details,.p-grid,.v-grid{grid-template-columns:1fr}
+  .way{padding:36px 28px}
+  .burger{display:block}
+  .menu{position:fixed;inset:78px 0 auto 0;background:var(--cream);flex-direction:column;align-items:flex-start;padding:30px 28px 40px;gap:22px;border-bottom:1px solid var(--line);transform:translateY(-120%);transition:.35s;z-index:-1}
+  .menu.open{transform:none}
+}
+@media (max-width:560px){
+  .wrap{padding:0 22px}
+  .sub-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header id="top">
+  <div class="wrap nav">
+    <a href="#top" class="brand">
+      <div class="mark" role="img" aria-label="Rhythm Commerce Academy logo"></div>
+      <div class="brand-name">Rhythm<small>Commerce Academy</small></div>
+    </a>
+    <nav class="menu" id="menu">
+      <a href="#about">About</a>
+      <a href="#subjects">Subjects</a>
+      <a href="#learn">Classes</a>
+      <a href="#parents">Parents</a>
+      <a href="#results">Results</a>
+      <a href="#videos">Lectures</a>
+      <a href="#" data-wa="demo" class="btn btn-solid">Free Demo Class</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <span class="eyebrow">Online Commerce Coaching · Class 11 &amp; 12 · CBSE &amp; MP Board</span>
+      <h1>Commerce, taught with <em>clarity</em> and care.</h1>
+      <p class="hi hi-line">कॉमर्स अब आसान, रटकर नहीं, समझकर।</p>
+      <p class="lead">Accountancy, Business Studies and Economics with Sarika Jain. Learn online from anywhere in India, or join a small batch in Indore.</p>
+      <div class="hero-cta">
+        <a href="#" data-wa="demo" class="btn btn-solid">Book a free demo class</a>
+        <a href="https://www.youtube.com/@Rhythm_Commerce_Academy" target="_blank" rel="noopener" class="btn btn-line">Watch free lectures</a>
+      </div>
+      <p class="cta-note">No fees, no commitment. <span class="hi">डेमो क्लास बिल्कुल निःशुल्क है।</span></p>
+    </div>
+    <div class="reveal">
+      <div class="portrait"></div>
+      <div class="portrait-cap"><span>Sarika Jain</span><span>Founder &amp; Educator</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="stats reveal">
+    <div class="stat"><b>12+</b><span>Years of teaching</span></div>
+    <!-- Confirm the 100/100 claim with her (the YouTube channel mentions it) -->
+    <div class="stat"><b>100/100</b><span>Board scores by her students</span></div>
+    <div class="stat"><b>Free</b><span>Demo class, no commitment</span></div>
+    <div class="stat"><b>Online</b><span>Learn from anywhere in India</span></div>
+  </div>
+</div>
+
+<!-- ================= ABOUT ================= -->
+<!-- PLACEHOLDER TEXT: replace with Sarika ma'am's own words -->
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="reveal">
+      <span class="eyebrow">About</span>
+      <h2>A teacher first, for over twelve years.</h2>
+    </div>
+    <div class="reveal">
+      <p>Sarika Jain has taught commerce to Class 11 and 12 students for more than twelve years. She starts with the concept and moves to practice, so that by exam day the questions already feel familiar.</p>
+      <p>Through Rhythm Commerce Academy she teaches students online across India and in small batches in Indore, and shares free lectures on YouTube.</p>
+      <p class="quote">"Commerce isn't about memorising. Once a student sees why an entry works, they never forget it."</p>
+      <div class="sign">Sarika Jain<small>Founder, Rhythm Commerce Academy</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SUBJECTS ================= -->
+<section class="subjects" id="subjects">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="eyebrow">What we teach</span><h2>Every core commerce subject.</h2></div>
+      <p class="lead">The full syllabus for Class 11 and 12, taught to match how CBSE and MP Board papers are actually set.</p>
+    </div>
+    <div class="sub-grid reveal">
+      <div class="sub"><span class="num">01</span><h3>Accountancy</h3><p>From journal entries to final accounts, partnership and company accounts, built up one step at a time.</p></div>
+      <div class="sub"><span class="num">02</span><h3>Business Studies</h3><p>Principles, functions and case studies, with answers written the way examiners want to read them.</p></div>
+      <div class="sub"><span class="num">03</span><h3>Economics</h3><p>Micro, macro, statistics and Indian economic development. Numericals and diagrams made simple.</p></div>
+      <div class="sub"><span class="num">04</span><h3>Board Exam Prep</h3><p>Important questions, sample papers, revision sessions and a clear plan for exam day.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WAYS TO LEARN ================= -->
+<section id="learn">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="eyebrow">Classes</span><h2>Two ways to learn.</h2></div>
+    </div>
+    <div class="ways-grid">
+      <div class="way reveal">
+        <span class="tag">Online</span>
+        <h3>YouTube Lectures</h3>
+        <p class="price">Free, always</p>
+        <ul>
+          <li>Chapter-wise lectures for Class 11 &amp; 12</li>
+          <li>Important questions and exam strategy</li>
+          <li>Revision sessions before the boards</li>
+          <li>Learn at your own pace, anywhere</li>
+        </ul>
+        <a href="https://www.youtube.com/@Rhythm_Commerce_Academy" target="_blank" rel="noopener" class="btn btn-line">Start watching</a>
+      </div>
+      <div class="way dark reveal">
+        <span class="tag">Online · Indore</span>
+        <h3>Personal Batches</h3>
+        <p class="price">Free demo class · fees on enquiry</p>
+        <ul>
+          <li>Online classes, or in person near Airport Road, Indore</li>
+          <li>Small batches with personal attention</li>
+          <li>Regular tests and doubt-clearing sessions</li>
+          <li>Notes and practice material</li>
+        </ul>
+        <a href="#" data-wa="demo" class="btn">Book a free demo class</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOR PARENTS ================= -->
+<!-- Confirm these three points with Sarika ma'am -->
+<section class="parents" id="parents">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="eyebrow">For parents · <span class="hi">अभिभावकों के लिए</span></span><h2>You'll always know how your child is doing.</h2></div>
+      <p class="lead">Board years are stressful for the whole family. We keep batches small, test regularly and keep parents informed, so the results hold no surprises.</p>
+    </div>
+    <div class="p-grid">
+      <div class="p-item reveal"><h3>Regular tests</h3><p>Chapter tests and full practice papers, checked the way board examiners check them.</p></div>
+      <div class="p-item reveal"><h3>Progress updates</h3><p>Parents hear how their child is doing, including where more work is needed, well before the exams.</p></div>
+      <div class="p-item reveal"><h3>Personal attention</h3><p>Small batches mean every doubt gets answered and no student quietly falls behind.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESULTS ================= -->
+<!-- PLACEHOLDER RESULTS: replace with real toppers before going live -->
+<section class="results" id="results">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">Results</span>
+      <h2>Our students, in their own numbers.</h2>
+      <p class="lead">Many students score above 90, and some score a perfect 100 in their subjects. A few recent results:</p>
+    </div>
+    <div class="res-grid reveal">
+      <div class="res"><b>98<sup>%</sup></b><div class="who">Rhythm</div><div class="what">Class 12 · CBSE</div></div>
+      <div class="res"><b>90<sup>%</sup></b><div class="who">Reva</div><div class="what">Class 12 · MP Board</div></div>
+      <div class="res"><b>82<sup>%</sup></b><div class="who">Kunj</div><div class="what">Class 12 · CBSE</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<!-- PLACEHOLDER QUOTES: replace with real student/parent words before going live -->
+<section id="testimonials">
+  <div class="wrap">
+    <div class="reveal"><span class="eyebrow">Testimonials</span><h2>What students say.</h2></div>
+    <div class="t-grid">
+      <div class="t reveal"><div class="q">“</div><p>Accounts used to scare me. Ma'am explained every entry until it made sense, and I went into the board exam confident.</p><div class="who">Rhythm<small>Class 12, CBSE</small></div></div>
+      <div class="t reveal"><div class="q">“</div><p>The revision videos before the exams were exactly what I needed. Clear, to the point and focused on what really comes in the paper.</p><div class="who">Reva<small>Class 12, MP Board</small></div></div>
+      <div class="t reveal"><div class="q">“</div><p>She is patient and always ready to clear a doubt. Economics finally became a scoring subject for me.</p><div class="who">Kunj<small>Class 12, CBSE</small></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VIDEOS (updates automatically from the channel) ================= -->
+<section class="videos" id="videos">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="eyebrow">Free lectures</span><h2>Latest from the channel.</h2></div>
+      <a href="https://www.youtube.com/@Rhythm_Commerce_Academy?sub_confirmation=1" target="_blank" rel="noopener" class="link">Subscribe on YouTube →</a>
+    </div>
+    <!-- The 3 latest uploads load automatically (see script at the bottom). If that fails, the full playlist player shows instead. -->
+    <div class="v-grid reveal" id="vgrid"></div>
+  </div>
+</section>
+
+<!-- ===== BACKUP, HIDDEN: "Free notes for WhatsApp number" section.
+     To switch it on: delete this comment's first and last lines, and paste a Google Form link in place of PASTE_GOOGLE_FORM_LINK.
+<section class="parents" id="notes">
+  <div class="wrap sec-head" style="margin-bottom:0">
+    <div><span class="eyebrow">Free download</span><h2>Class 12 important questions, free.</h2></div>
+    <a href="PASTE_GOOGLE_FORM_LINK" target="_blank" rel="noopener" class="btn btn-solid">Get the free PDF</a>
+  </div>
+</section>
+===== END BACKUP ===== -->
+
+<!-- ================= FAQ ================= -->
+<section id="faq">
+  <div class="wrap faq-grid">
+    <div class="reveal"><span class="eyebrow">FAQ</span><h2>Common questions.</h2></div>
+    <div class="reveal">
+      <details><summary>Which boards do you teach?</summary><p>Both CBSE and MP Board, for Class 11 and Class 12 Commerce.</p></details>
+      <details><summary>Are the YouTube lectures really free?</summary><p>Yes. Every lecture on the channel is free to watch. Subscribe so you don't miss new ones.</p></details>
+      <details><summary>Can I study online if I don't live in Indore?</summary><p>Yes. Classes are available online for students anywhere in India, along with small in-person batches in Indore.</p></details>
+      <details><summary>How does the free demo class work?</summary><p>Message us on WhatsApp with the student's class and board. We'll set a time for a free demo class, with no fees and no commitment. Afterwards we'll share batch timings and fees.</p></details>
+      <details><summary>Which subjects are covered?</summary><p>Accountancy, Business Studies and Economics, plus focused board exam preparation and revision.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <span class="eyebrow reveal">Get in touch</span>
+    <h2 class="reveal">Questions about batches? We're a message away.</h2>
+    <p class="lead reveal">Tell us the student's class and board, and we'll help you choose the right option.</p>
+    <div class="hero-cta reveal" style="justify-content:center">
+      <a href="#" data-wa="demo" class="btn btn-solid">Book a free demo class</a>
+      <a href="#" data-wa class="btn btn-line">Ask a question on WhatsApp</a>
+    </div>
+    <p class="hi reveal" style="margin-top:18px;color:#97A3BA">कोई भी सवाल हो, WhatsApp पर पूछें।</p>
+    <div class="c-details reveal">
+      <div><span>Email</span><a href="#" data-email data-show></a></div>
+      <div><span>Classes</span><p>Online · Indore (Airport Road)</p></div>
+      <div><span>YouTube</span><a href="https://www.youtube.com/@Rhythm_Commerce_Academy" target="_blank" rel="noopener">@Rhythm_Commerce_Academy</a></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr"></span> Rhythm Commerce Academy · Sarika Jain</span>
+    <span>Your Gateway to Commerce Excellence · Indore</span>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp button -->
+<a href="#" data-wa class="wa-float" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.2.6 4.4 1.7 6.3L3.2 28.8l7.1-1.9c1.8 1 3.8 1.5 5.8 1.5 7 0 12.7-5.7 12.7-12.7S23 3 16 3zm0 23.2c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.2 1.1 1.1-4.1-.3-.4c-1.1-1.7-1.6-3.6-1.6-5.5C5.3 9.8 10.1 5 16 5s10.6 4.8 10.6 10.6S21.9 26.2 16 26.2zm5.8-7.9c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.6-.9-.8-1.6-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6-.1-.2-.7-1.7-1-2.4-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.4c.2.2 2.4 3.6 5.7 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+</a>
+
+<script>
+/* ===================================================
+   EDIT YOUR DETAILS HERE (this is the only place)
+   whatsapp: country code + number, digits only.
+             Example for +91 98765 43210 -> "919876543210"
+   =================================================== */
+const SITE = {
+  whatsapp: "+919826951859",
+  email:    "rhythmacademy@gmail.com",
+  waText:   "Hello, I'd like to know about the commerce batches at Rhythm Commerce Academy.",
+  demoText: "Hello, I'd like to book a free demo class. Student's class and board: "
+};
+
+// Fill every WhatsApp and email link on the page from SITE
+document.querySelectorAll('[data-wa]').forEach(a => {
+  const msg = a.dataset.wa === 'demo' ? SITE.demoText : SITE.waText;   // data-wa="demo" = demo-class buttons
+  a.href = `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(msg)}`;
+  a.target = '_blank'; a.rel = 'noopener';
+});
+document.querySelectorAll('[data-email]').forEach(a => {
+  a.href = `mailto:${SITE.email}`;
+  if (a.hasAttribute('data-show')) a.textContent = SITE.email;
+});
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+// Latest 3 YouTube videos. Browsers can't read YouTube's feed directly, so a free converter (rss2json) is used.
+const CHANNEL = 'UCf5JOuDA8JvhbHBw_TEcIbg', vgrid = document.getElementById('vgrid');
+const esc = t => t.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+fetch('https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent('https://www.youtube.com/feeds/videos.xml?channel_id=' + CHANNEL))
+  .then(r => r.json())
+  .then(d => {
+    const vids = (d.items || []).slice(0, 3);
+    if (!vids.length) throw new Error('no videos');
+    vgrid.innerHTML = vids.map(v => {
+      const id = v.guid.split(':').pop();   // guid looks like "yt:video:VIDEO_ID"
+      const date = new Date(v.pubDate.replace(' ', 'T')).toLocaleDateString('en-IN', {day:'numeric', month:'short', year:'numeric'});
+      return `<a class="v-card" data-id="${id}" href="https://www.youtube.com/watch?v=${id}" target="_blank" rel="noopener">
+        <div class="v-thumb" style="background-image:url(https://i.ytimg.com/vi/${id}/hqdefault.jpg)"></div>
+        <h3>${esc(v.title)}</h3><small>${date}</small></a>`;
+    }).join('');
+    // Clicking a card plays the video right there instead of leaving the site
+    vgrid.querySelectorAll('.v-card').forEach(c => c.onclick = e => {
+      e.preventDefault();
+      const t = c.querySelector('.v-thumb');
+      if (t.classList.contains('playing')) return;
+      t.classList.add('playing');
+      t.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${c.dataset.id}?autoplay=1" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>`;
+    });
+  })
+  .catch(() => {   // fallback: full uploads playlist player
+    vgrid.className = 'video-box';
+    vgrid.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/videoseries?list=UU' + CHANNEL.slice(2) + '" title="Rhythm Commerce Academy lectures" loading="lazy" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>';
+  });
+
+// Mobile menu toggle (closes when a link is tapped)
+const menu = document.getElementById('menu');
+document.getElementById('burger').onclick = () => menu.classList.toggle('open');
+menu.querySelectorAll('a').forEach(a => a.onclick = () => menu.classList.remove('open'));
+
+// Header border on scroll
+const hdr = document.querySelector('header');
+addEventListener('scroll', () => hdr.classList.toggle('scrolled', scrollY > 10));
+
+// Fade sections in as they scroll into view
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+}), { threshold: .12 });
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
